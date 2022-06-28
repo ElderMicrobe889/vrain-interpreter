@@ -1,0 +1,37 @@
+{
+  "name": "vrain",
+  "version": "0.0.0",
+  "description": "A brain**** interpreter.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": "./dist/bin.js",
+  "files": [
+    "./dist/**/*"
+  ],
+  "scripts": {
+    "preinstall": "npx -y only-allow pnpm",
+    "lint": "pnpm eslint src/**/* --fix",
+    "build": "pnpm tsc",
+    "start": "node dist/index.js",
+    "dev-start": "pnpm build && pnpm start"
+  },
+  "keywords": [
+    "vrain",
+    "brainfuck",
+    "interpreter"
+  ],
+  "author": "ElderMicrobe889",
+  "homepage": "https://github.com/ElderMicrobe889/vrain#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElderMicrobe889/vrain"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "typescript": "^4.6.3"
+  }
+}
